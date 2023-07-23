@@ -1,0 +1,38 @@
+name: website
+description: my personal website
+synopsis: my personal website
+version: 0.1.0.0
+author: Bartek Łuka
+maintainer: bartosz.luka@skiff.com
+github: bartoszluka/website
+license: BSD3
+copyright: MIT
+category: Web
+
+default-extensions:
+  - OverloadedStrings
+  - ImportQualifiedPost
+
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - hakyll
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+  - -threaded
+
+executables:
+  website-exe:
+    main: website.hs
