@@ -12,16 +12,16 @@
     --standard-border-radius: 5px;
 
     /* Default (light) theme */
-    --bg: #fff;
-    --accent-bg: #f5f7ff;
-    --text: #212121;
-    --text-light: #585858;
+    --bg: #f2f4f8;
+    --accent-bg: #ffffff;
+    --text: #4c566a;
+    --text-light: ##7b88a1;
     --border: #898ea4;
-    --accent: #0d47a1;
-    --code: #d81b60;
-    --preformatted: #444;
-    --marked: #ffdd33;
-    --disabled: #efefef;
+    --accent: #88c0d0;
+    --code: #4c566a;
+    --preformatted: #4c566a;
+    --marked: #b48ead;
+    --disabled: #d8dee9;
 }
 
 /* Dark theme */
@@ -38,17 +38,6 @@
         --preformatted: #616e88;
         --disabled: #4c566a;
     }
-    /* ::backdrop { */
-    /*     color-scheme: dark; */
-    /*     --bg: #212121; */
-    /*     --accent-bg: #2b2b2b; */
-    /*     --text: #dcdcdc; */
-    /*     --text-light: #ababab; */
-    /*     --accent: #ffb300; */
-    /*     --code: #f06292; */
-    /*     --preformatted: #ccc; */
-    /*     --disabled: #111; */
-    /* } */
     /* Add a bit of transparency so light media isn't so glaring in dark mode */
     img,
     video {
@@ -705,4 +694,10 @@ sub {
     border-radius: 5px;
     padding: 1.5rem;
     margin: 2rem 0;
+}
+
+.posted-date {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 1rem;
 }

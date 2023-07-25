@@ -45,7 +45,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts)
-                        `mappend` constField "title" "Home"
+                        `mappend` constField "title" "Bartek's website"
                         `mappend` defaultContext
 
             getResourceBody
@@ -55,8 +55,23 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
---------------------------------------------------------------------------------
+-- updatedContext :: Item a -> Compiler String
+-- updatedContext item = do
+--     filePath <- getResourceFilePath
+--     date <- recompilingUnsafeCompiler $ lastUpdated filePath
+--     when (date == "")
+--     return undefined
+--   where
+--     lastUpdated :: FilePath -> IO String
+--     lastUpdated filePath =
+--         readProcess
+--             "git"
+--             ["log", "-1", "--format='%ad'", "--date=short", "--", filePath]
+--             ""
+
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y"
-        `mappend` defaultContext
+    let format = "%-d %B %Y"
+     in dateField "date" format
+            `mappend` modificationTimeField "updated" format
+            `mappend` defaultContext
