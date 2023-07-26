@@ -15,10 +15,12 @@
             </nav>
             <h1>$title$</h1>
 
+            $if(date)$
             <p class="posted-date">
                 First posted on $date$ $if(updated)$ (last updated on
                 $updated$). $else$ and not updated since. $endif$
             </p>
+            $endif$
         </header>
 
         <main>$body$</main>
