@@ -17,6 +17,11 @@ main = hakyll $ do
     --             >>= loadAndApplyTemplate "templates/default.html" defaultContext
     --             >>= relativizeUrls
 
+    -- match "images/*" $ do
+    --     route idRoute
+    --     compile $ loadImage
+    --         >>= convertToWebpCompiler
+
     match "posts/*" $ do
         route $ setExtension "html"
         compile $
