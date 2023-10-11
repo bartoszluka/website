@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Simple.css Demo</title>
+        <link rel="stylesheet" type="text/css" href="../css/simple.css" />
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../archive.html">Archive</a>
+            </nav>
+            <h1>Simple.css Demo</h1>
+
+            
+            <p class="posted-date">
+                First posted on 24 July 2023  (last updated on
+                27 July 2023). 
+            </p>
+            
+        </header>
+
+        <main><p>{# .notice}
+This demo page details a select set of elements that are meant to show off Simple.css’s styling, and provide HTML to help you get started easily. If you want a comprehensive demonstration of elements that may or may not be styled by Simple.css, please see <a href="https://test.simplecss.org">our test page</a>.</p>
+<p>This page is a demonstration of the elements that can be formatted using Simple.css. Each section includes a code block on how to include it in your site’s design.</p>
+<p>This may be a little basic for some people, but I wanted the barrier for entry to be as low as possible for this project.</p>
+<h2 id="basic-typography">Basic Typography</h2>
+<p>All the typography of Simple.css uses <code>rem</code> for sizing. This means that accessibility is maintained for those who change their browser font size. The <code>body</code> element has a size of <code>1.15rem</code> which makes all the standard font sizes slightly larger. This equates to <code>18.4px</code> for paragraph text, instead of the standard <code>16px</code>.</p>
+<p>The heading elements also have an increased top margin in order to break blocks of text up better.</p>
+<h1 id="heading-1-3rem">Heading 1 <code>3rem</code></h1>
+<h2 id="heading-2-2.6rem">Heading 2 <code>2.6rem</code></h2>
+<h3 id="heading-3-2rem">Heading 3 <code>2rem</code></h3>
+<h4 id="heading-4-1.44rem">Heading 4 <code>1.44rem</code></h4>
+<h5 id="heading-5-1.15rem">Heading 5 <code>1.15rem</code></h5>
+<h6 id="heading-6-0.96rem">Heading 6 <code>0.96rem</code></h6>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h2&gt;</span>This is a H2 header<span class="kw">&lt;h2&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p&gt;</span>This is some paragraph text.<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<h3 id="links-buttons">Links &amp; Buttons</h3>
+<p>Links are formatted very simply on Simple.css (shock horror). They use the <code>accent</code> CSS variable and are underlined. There is a <code>:hover</code> effect that removes the underline.</p>
+<p>Buttons use the same <code>accent</code> CSS variable for their colour. When hovering, there is an opacity effect.</p>
+<p><a href="https://example.com">I’m a hyperlink</a></p>
+<button>
+I’m a button
+</button>
+<p><a class="button" href="https://example.com">I’m a button with a link</a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://example.com&quot;</span><span class="kw">&gt;</span>I'm a hyperlink<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button&gt;</span>I'm a button<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;button&quot;</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://example.com&quot;</span><span class="kw">&gt;</span>I'm a button with a link<span class="kw">&lt;/a&gt;</span></span></code></pre></div>
+<h2 id="other-typography-elements">Other typography elements</h2>
+<p>There are a number of other typography elements that you can use with Simple.css. Some of the common ones are:</p>
+<ul>
+<li>All the standard stuff, like <strong>bold</strong>, <em>italic</em> and <u>underlined</u> text.</li>
+<li><mark>Highlighting text</mark> using the <code>mark</code> element.</li>
+<li>Adding <code>inline code</code> using the <code>code</code> element.</li>
+<li>Displaying keyboard commands like <kbd>ALT+F4</kbd> using the <code>kbd</code> element.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;b&gt;</span>Bold text<span class="kw">&lt;/b&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;i&gt;</span>Italic text<span class="kw">&lt;/i&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;u&gt;</span>Underlined text<span class="kw">&lt;/u&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;mark&gt;</span>Highlighted text<span class="kw">&lt;/mark&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;code&gt;</span>Inline code<span class="kw">&lt;/code&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;kbd&gt;</span>Alt+F4<span class="kw">&lt;/kbd&gt;</span></span></code></pre></div>
+<h3 id="lists">Lists</h3>
+<p>We all love a good list, right? I know my wife does!</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<ol type="1">
+<li>Do this thing</li>
+<li>Do that thing</li>
+<li>Do the other thing</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a># Bulleted list</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;ul&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Item 1<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Item 2<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Item 3<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/ul&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a># Numbered list</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;ol&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Do this thing<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Do that thing<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Do the other thing<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/ol&gt;</span></span></code></pre></div>
+<h3 id="blockquotes">Blockquotes</h3>
+<p>Sometimes you may want to quote someone else in your HTML. For this we use the <code>blockquote</code> element. Here’s what a quote looks like with Simple.css:</p>
+<blockquote>
+<p>Friends don’t spy; true friendship is about privacy, too.</p>
+<p><cite>– Stephen King</cite></p>
+</blockquote>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;blockquote&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span>Friends don’t spy; true friendship is about privacy, too.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;&lt;cite&gt;</span>– Stephen King<span class="kw">&lt;/cite&gt;&lt;/p&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/blockquote&gt;</span></span></code></pre></div>
+<h3 id="code-blocks">Code blocks</h3>
+<p>Code blocks are different from the inline <code>code</code> element. Code blocks are used when you want to display a block of code, like this:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>body {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--text</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background</span>: <span class="fu">var(</span><span class="va">--bg</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">1.15</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span>: <span class="dv">1.5</span><span class="op">;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;pre&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;code&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  body {</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    color: var(--text);</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    background: var(--bg);</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    font-size: 1.15rem;</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    line-height: 1.5;</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    margin: 0;</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/code&gt;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/pre&gt;</span></span></code></pre></div>
+<h2 id="other-html-elements">Other HTML elements</h2>
+<p>There are other HTML elements that are formatted in Simple.css. If you think there should be more added, please <a href="https://github.com/kevquirk/simple.css/issues">log an issue on Github</a></p>
+<h3 id="notice-box">Notice box</h3>
+<p>{: .notice}
+This is a notice box. It’s useful for calling out snippets of information. Cool, huh?</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;notice&quot;</span><span class="kw">&gt;</span>This is a notice box. It's useful for calling out snippets of information. Cool, huh?<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<h3 id="aside">Aside</h3>
+<aside>
+<p>
+<b>Aside</b>
+</p>
+<p>
+This is an <code>aside</code>, it floats to the right and stands out slightly.
+</p>
+</aside>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;aside&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p&gt;</span>Your aside content goes here.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/aside&gt;</span></span></code></pre></div>
+<h3 id="article">Article</h3>
+<article>
+<h2>
+This is an article
+</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</article>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;article&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h2&gt;</span>This is an article<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p&gt;</span>Some content will go here, which will be inside your article.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/article&gt;</span></span></code></pre></div>
+<h3 id="section">Section</h3>
+<p>Sections are good for splitting up a page into multiple…sections. 🙃</p>
+<section>
+<h2>
+This is a section
+</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</section>
+<div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;section&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h2&gt;</span>This is a section<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p&gt;</span>Some content will go here, which will be inside your section.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/section&gt;</span></span></code></pre></div>
+<h2 id="navigation">Navigation</h2>
+<p>The <code>nav</code> menu is deliberately designed to be extremely simple so that you can improve on it as you see fit. Or, just leave it as is to have a good looking, functional navigation menu.</p>
+<p>Navigation menus inside the <code>header</code> are automatically formatted like the one on this site. If you decide to put a <code>nav</code> menu elsewhere on your site, for example in a post for a table of contents, no formatting is applied. This is so you can add your own formatting as you see fit.</p>
+<p>There’s no JavaScript or checkbox CSS hacks here. It’s just a collection of simple “buttons” that wrap to the given width of the page.</p>
+<p>The <code>nav</code> menu will also adapt to smaller screens automatically so that it doesn’t take up too much space.</p>
+<p>To add a <code>nav</code> menu, just add the following to the <code>&lt;header&gt;</code> section of your site:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;nav&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;/&quot;</span><span class="kw">&gt;</span>Home<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;/about&quot;</span><span class="kw">&gt;</span>About<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;/blog&quot;</span><span class="kw">&gt;</span>Blog<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;/notes&quot;</span><span class="kw">&gt;</span>Notes<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;/guestbook&quot;</span><span class="kw">&gt;</span>Guestbook<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;/contact&quot;</span><span class="kw">&gt;</span>Contact<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/nav&gt;</span></span></code></pre></div>
+<h2 id="images">Images</h2>
+<p>In Simple.css, images within the <code>main</code> element are always full width and have rounded edges to them. The <code>figcaption</code> element is also formatted in Simple.css. Here are examples of images with and without a caption:</p>
+<figure>
+<img src="../images/mountain.png" title="a nice mountain" alt="mountain" />
+<figcaption aria-hidden="true">mountain</figcaption>
+</figure>
+<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a># Standard image</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">alt</span><span class="ot">=</span><span class="st">&quot;A dog on an iPad&quot;</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;/assets/images/dog-ipad.jpg&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a># Image with a caption</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;figure&gt;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;img</span> <span class="er">alt</span><span class="ot">=</span><span class="st">&quot;This is a black swan&quot;</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;/assets/images/goose.jpg&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;figcaption&gt;</span>This is a black swan<span class="kw">&lt;/figcaption&gt;</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/figure&gt;</span></span></code></pre></div>
+<h2 id="accordions">Accordions</h2>
+<p>Accordions are cool to play with. They’re especially useful when it comes to things like FAQ pages. Many people invoke JavaScript, or <code>div</code> for life when they use accordions. I don’t really understand why that is when it’s available in plain old HTML:</p>
+<details>
+<summary>
+Spoiler alert!
+</summary>
+<p>
+You smell. 🙂
+</p>
+</details>
+<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;summary&gt;</span>Spoiler alert!<span class="kw">&lt;/summary&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span>You smell. 🙂<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span></code></pre></div>
+<h2 id="tables">Tables</h2>
+<p>Like lists, sometimes you may need to add a table to your webpage. In Simple.css tables automatically highlight every other row to make reading easier. Table header text is also bold. Here’s what they look like:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jackie</td>
+<td>012345</td>
+</tr>
+<tr class="even">
+<td>Lucy</td>
+<td>112346</td>
+</tr>
+<tr class="odd">
+<td>David</td>
+<td>493029</td>
+</tr>
+<tr class="even">
+<td>Kerry</td>
+<td>395499</td>
+</tr>
+<tr class="odd">
+<td>Steve</td>
+<td>002458</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb15"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;table&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;thead&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th&gt;</span>Name<span class="kw">&lt;/th&gt;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th&gt;</span>Number<span class="kw">&lt;/th&gt;</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/thead&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;tbody&gt;</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Jackie<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>012345<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Lucy<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>112346<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>David<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>493029<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Kerry<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>395499<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Steve<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>002458<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/tbody&gt;</span></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/table&gt;</span></span></code></pre></div>
+<h2 id="forms">Forms</h2>
+<p>Forms are useful for all kinds of things on webpages. Contact forms, newsletter sign ups etc. Forms also look pretty good on Simple.css:</p>
+<form>
+<p>
+<strong>This is just a test form. It doesn’t do anything.</strong>
+</p>
+<p>
+<select>
+<option selected="selected" value="1">Title</option>
+<option value="2">Mr</option>
+<option value="3">Miss</option>
+<option value="4">Mrs</option>
+<option value="5">Other</option>
+</select>
+</p>
+<p>
+<label>First name</label>
+<input type="text" name="first_name">
+</p>
+<p>
+<label>Surname</label>
+<input type="text" name="surname">
+</p>
+<p>
+<label>Email</label>
+<input type="email" name="email" required>
+</p>
+<p>
+<label>Enquiry type:</label>
+<label><input checked="checked" name="type" type="radio" value="sales" /> Sales</label>
+<label><input name="type" type="radio" value="support" /> Support</label>
+<label><input name="type" type="radio" value="billing" /> Billing</label>
+</p>
+<p>
+<label>Message</label>
+<textarea rows="6"></textarea>
+</p>
+<p>
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars" multiple>
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="opel">Opel</option>
+<option value="audi">Audi</option>
+</select>
+</p>
+<p>
+<label>
+<input type="checkbox" id="checkbox" value="terms">
+I agree to the <a href="#">terms and conditions</a>
+</label>
+</p>
+<button>
+Send
+</button>
+<button type="reset">
+Reset
+</button>
+<button disabled="disabled">
+Disabled
+</button>
+</form>
+<div class="sourceCode" id="cb16"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;form&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;&lt;strong&gt;</span>This is just a test form. It doesn't do anything.<span class="kw">&lt;/strong&gt;&lt;/p&gt;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;&lt;select&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;option</span> <span class="er">selected</span><span class="ot">=</span><span class="st">&quot;selected&quot;</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;1&quot;</span><span class="kw">&gt;</span>Title<span class="kw">&lt;/option&gt;</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;option</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;2&quot;</span><span class="kw">&gt;</span>Mr<span class="kw">&lt;/option&gt;</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;option</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;3&quot;</span><span class="kw">&gt;</span>Miss<span class="kw">&lt;/option&gt;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;option</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;4&quot;</span><span class="kw">&gt;</span>Mrs<span class="kw">&lt;/option&gt;</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;option</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;5&quot;</span><span class="kw">&gt;</span>Other<span class="kw">&lt;/option&gt;</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/select&gt;&lt;/p&gt;</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;</span>First name<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;input</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;text&quot;</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;first_name&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;</span>Surname<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;input</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;text&quot;</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;surname&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;</span>Email<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;input</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;email&quot;</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;email&quot;</span> <span class="er">required</span><span class="ot">=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span></span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;</span>Enquiry type:<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;&lt;input</span> <span class="er">checked</span><span class="ot">=</span><span class="st">&quot;checked&quot;</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;type&quot;</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;radio&quot;</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;sales&quot;</span> <span class="kw">/&gt;</span> Sales<span class="kw">&lt;/label&gt;</span> </span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;&lt;input</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;type&quot;</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;radio&quot;</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;support&quot;</span> <span class="kw">/&gt;</span> Support<span class="kw">&lt;/label&gt;</span> </span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;&lt;input</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;type&quot;</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;radio&quot;</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;billing&quot;</span> <span class="kw">/&gt;</span> Billing<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;</span>Message<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;textarea</span> <span class="er">rows</span><span class="ot">=</span><span class="st">&quot;6&quot;</span><span class="kw">&gt;&lt;/textarea&gt;</span></span>
+<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span></span>
+<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;label&gt;</span></span>
+<span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;input</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;checkbox&quot;</span> <span class="er">id</span><span class="ot">=</span><span class="st">&quot;checkbox&quot;</span> <span class="er">value</span><span class="ot">=</span><span class="st">&quot;terms&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a>  I agree to the <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>terms and conditions<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/label&gt;</span></span>
+<span id="cb16-44"><a href="#cb16-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb16-45"><a href="#cb16-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-46"><a href="#cb16-46" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;button&gt;</span>Send<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb16-47"><a href="#cb16-47" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;button</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;reset&quot;</span><span class="kw">&gt;</span>Reset<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb16-48"><a href="#cb16-48" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;button</span> <span class="er">disabled</span><span class="ot">=</span><span class="st">&quot;disabled&quot;</span><span class="kw">&gt;</span>Disabled<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb16-49"><a href="#cb16-49" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
+</main>
+        <footer>
+            Site proudly generated by
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>
